@@ -1,0 +1,21 @@
+.container {
+  margin-top: 7%;
+  height: 70%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  width: 95%;
+  height: 11%;
+  border-radius: 1rem;
+  font-size: x-large;
+  color: rgb(56, 51, 51);
+  padding-left: 4%;
+  border: none;
+  box-shadow: 6px 10px 8px rgba(128, 128, 128, 0.362);
+}
+.search:focus {
+  outline: none;
+}/*# sourceMappingURL=SearchBar.module.css.map */
