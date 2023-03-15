@@ -1,3 +1,14 @@
+@mixin setPerScreen($size, $width){
+    @media all and (max-width: $size){
+        .container{
+            width: $width;
+        }
+        .searchLogo{
+            left: 80%;
+        }
+    }
+}
+
 .container{
     margin-top: 7%;
     height: 70%;
@@ -6,17 +17,44 @@
     justify-content: center;
 }
 
-.search{
-    width: 95%;
+.searchBox{
+    position: relative;
+    width: 100%;
     height: 11%;
+}
+
+.search{
+    position: absolute;
+    width: 88%;
+    height: 100%;
     border-radius: 1rem;
-    font-size:x-large;
+    font-size: x-large;
+    font-weight: lighter;
     color: rgb(56, 51, 51);
     padding-left: 4%;
+    padding-right: 8%;
     border: none;
     box-shadow: 6px 10px 8px rgba(128, 128, 128, 0.362);
-
     &:focus{
         outline: none;
+    }
+}
+
+@include setPerScreen(800px, 85%);
+
+@include setPerScreen(400px, 98%);
+
+.searchLogo{
+    position: absolute;
+    top: 25%;
+    left: 92%;
+    max-height: 50%;
+    max-width: 50%;
+    opacity: 0.5;
+
+    &:hover{
+        cursor: pointer;
+        max-height: 52%;
+        max-width: 52%;
     }
 }

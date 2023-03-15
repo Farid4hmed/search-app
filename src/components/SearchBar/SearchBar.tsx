@@ -8,10 +8,10 @@ export function SearchBar (props: IAppProps) {
 
   return (
     <div className={styles.container}>
-        <input className={styles.search} placeholder="Search">
-
-        </input>
-
+        <div className={styles.searchBox}>
+        <input className={styles.search} placeholder="Search" />
+        <img className={styles.searchLogo} src={require('./search.png')} alt="searchBar"/>
+        </div>
 
     </div>
   );
