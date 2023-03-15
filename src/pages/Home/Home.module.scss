@@ -1,0 +1,16 @@
+@mixin removeDefaults {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    @include removeDefaults();
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightblue;
+}
