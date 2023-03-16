@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, MouseEvent } from 'react';
+import { FC, MouseEvent } from 'react';
 import styles from "./ProductsGrid.module.css";
 export interface IAppProps {
 }

@@ -22,6 +22,7 @@ const Sidebar:FC = (props: IAppProps) =>{
             <h4>H&M</h4>
           </div>
         </div>
+        <hr/>
         <div className={styles.price}>
           <h3>Price Range</h3>
           <p>⌄</p>
@@ -36,6 +37,7 @@ const Sidebar:FC = (props: IAppProps) =>{
             <h4>1000 to 3000</h4>
           </div>
         </div>
+        <hr/>
         <div className={styles.ratings}>
           <h3>Ratings</h3>
           <p>⌄</p>
