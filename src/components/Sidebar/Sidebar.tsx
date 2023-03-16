@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import styles from "./Sidebar.module.css";
 export interface IAppProps {
 }
 
-export function Sidebar(props: IAppProps) {
+const Sidebar:FC = (props: IAppProps) =>{
   return (
     <div className={styles.container}>
       <h1>Search Results</h1>
@@ -67,3 +68,5 @@ export function Sidebar(props: IAppProps) {
     </div>
   );
 }
+
+export default Sidebar;

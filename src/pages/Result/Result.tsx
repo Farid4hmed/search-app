@@ -1,10 +1,11 @@
-import { ProductsGrid } from "../../components/ProductsGrid/ProductsGrid";
-import { Sidebar } from "../../components/Sidebar/Sidebar";
+import { FC } from 'react';
+import ProductsGrid from '../../components/ProductsGrid/ProductsGrid';
+import  Sidebar from "../../components/Sidebar/Sidebar";
 import styles from "./Result.module.css";
 export interface IAppProps {
 }
 
-export function Result (props: IAppProps) {
+const Result:FC = (props: IAppProps) => {
   return (
     <div className={styles.container}>
         <div className={styles.navbar}>
@@ -21,3 +22,5 @@ export function Result (props: IAppProps) {
     </div>
   );
 }
+
+export default Result;

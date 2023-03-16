@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Home } from "./pages/Home/Home";
-import { Result } from "./pages/Result/Result"
+import  Home from "./pages/Home/Home";
+import  Result  from "./pages/Result/Result"
 
-function App() {
+const App:FC = () => {
   return (
     <Routes>
       <Route path="/result" element={<Home />}/>

@@ -1,11 +1,11 @@
-
+import { FC } from 'react';
 import styles from "./SearchBar.module.css";
 
 export interface IAppProps {
 
 }
 
-export function SearchBar(props: IAppProps) {
+const SearchBar:FC = (props: IAppProps) => {
 
   return (
     <div className={styles.container}>
@@ -54,3 +54,5 @@ export function SearchBar(props: IAppProps) {
     </div>
   );
 }
+
+export default SearchBar;
