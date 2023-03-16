@@ -1,3 +1,4 @@
+import { ProductsGrid } from "../../components/ProductsGrid/ProductsGrid";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import styles from "./Result.module.css";
 export interface IAppProps {
@@ -15,7 +16,7 @@ export function Result (props: IAppProps) {
 
         <div className={styles.results}>
         <Sidebar />
-
+        <ProductsGrid />
         </div>
     </div>
   );

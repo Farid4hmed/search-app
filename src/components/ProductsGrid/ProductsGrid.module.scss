@@ -1,0 +1,36 @@
+// @media all and (max-width: 1000px) {
+//     .container{
+//         background-color: red;
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr);
+//     }
+// }
+
+
+
+
+.container{
+    height: fit-content;
+    width: 75%;
+    min-width: fit-content;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 14rem);
+   justify-content: center;
+    gap: 30px;
+    
+}
+
+.product{
+    height: 20rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    img{
+        max-height: 75%;
+        min-width: 100%;
+        border-radius: 3px;
+    }
+}
