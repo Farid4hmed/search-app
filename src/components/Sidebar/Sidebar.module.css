@@ -2,5 +2,223 @@
   position: sticky;
   top: 0;
   height: 70%;
-  width: 20%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+
+.filters {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.brand {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratings {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brandList {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -5%;
+}
+
+.brand1 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.brand1 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.brand1 input:hover {
+  cursor: pointer;
+}
+
+.brand2 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.brand2 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.brand2 input:hover {
+  cursor: pointer;
+}
+
+.priceList {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -5%;
+}
+
+.price1 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.price1 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.price1 input:hover {
+  cursor: pointer;
+}
+
+.price2 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.price2 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.price2 input:hover {
+  cursor: pointer;
+}
+
+.ratingList {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -5%;
+}
+
+.rating1 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.rating1 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.rating1 input:hover {
+  cursor: pointer;
+}
+.rating1 input {
+  margin-top: 3%;
+}
+
+.rating2 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.rating2 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.rating2 input:hover {
+  cursor: pointer;
+}
+.rating2 input {
+  margin-top: 3%;
+}
+
+.rating3 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.rating3 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.rating3 input:hover {
+  cursor: pointer;
+}
+.rating3 input {
+  margin-top: 3%;
+}
+
+.rating4 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.rating4 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.rating4 input:hover {
+  cursor: pointer;
+}
+.rating4 input {
+  margin-top: 3%;
+}
+
+.rating5 {
+  display: flex;
+  justify-content: baseline;
+  width: 50%;
+  margin-left: 5%;
+}
+.rating5 input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10%;
+}
+.rating5 input:hover {
+  cursor: pointer;
+}
+.rating5 input {
+  margin-top: 3%;
+}
+
+@media all and (max-width: 1000px) {
+  .container {
+    width: 45%;
+  }
+}
+@media all and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Sidebar.module.css.map */

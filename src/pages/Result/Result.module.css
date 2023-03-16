@@ -3,12 +3,14 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .results {
-  width: 100%;
+  width: 95%;
   height: 85%;
   display: flex;
+  background-color: red;
 }
 
 .navbar {
@@ -21,7 +23,7 @@
 
 .searchBox {
   position: relative;
-  width: 40%;
+  width: 35%;
   height: 37%;
 }
 
@@ -65,14 +67,26 @@
   .searchBox {
     width: 60%;
   }
+  .results {
+    width: 100%;
+    flex-direction: column;
+  }
 }
-@media all and (max-width: 450px) {
+@media all and (max-width: 500px) {
   .searchBox {
     width: 80%;
+  }
+  .results {
+    width: 100%;
+    flex-direction: column;
   }
 }
 @media all and (max-width: 350px) {
   .searchBox {
     width: 95%;
+  }
+  .results {
+    width: 100%;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=Result.module.css.map */
