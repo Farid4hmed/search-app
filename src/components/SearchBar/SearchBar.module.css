@@ -61,6 +61,9 @@
   .searchLogo {
     left: 92%;
   }
+  .photosFlex {
+    height: 20%;
+  }
 }
 @media all and (max-width: 400px) {
   .container {
@@ -72,6 +75,9 @@
   .searchLogo {
     left: 92%;
   }
+  .photosFlex {
+    height: 20%;
+  }
 }
 .suggestionWrapper {
   width: 100%;
@@ -81,6 +87,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  box-shadow: 5px 5px 40px gray;
 }
 
 .suggestion {

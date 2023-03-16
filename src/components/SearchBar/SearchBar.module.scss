@@ -9,6 +9,9 @@
         .searchLogo{
             left: 92%;
         }
+        .photosFlex{
+            height: 20%;
+        }
     }
 }
 
@@ -69,6 +72,7 @@
 @include setPerScreen(400px, 100%);
 
 
+//suggestion Box css
 .suggestionWrapper{
     width: 100%;
     height: 87%;
@@ -77,6 +81,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    box-shadow: 5px 5px 40px gray;
 }
 
 .suggestion{

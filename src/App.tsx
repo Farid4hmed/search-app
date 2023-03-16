@@ -5,8 +5,8 @@ import { Result } from "./pages/Result/Result"
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/result" element = { <Result /> } />
+      <Route path="/result" element={<Home />}/>
+      <Route path="/" element = { <Result /> } />
     </Routes>
   );
 }
