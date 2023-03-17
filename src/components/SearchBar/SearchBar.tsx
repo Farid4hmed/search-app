@@ -35,12 +35,10 @@ const SearchBar: FC<IAppProps> = (props) => {
   function handleKeyDown(event:any){
     if(event.key == 'Enter'){
       navigate("/result");
-        // console.log(props.search)
     }
   }
   function handleLogoClick(){
     navigate("/result");
-    // console.log(props.search);
   }
   return (
     <div className={styles.container}>
