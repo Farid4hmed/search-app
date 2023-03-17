@@ -24,20 +24,16 @@ export interface productObj {
 }
 
 const Sidebar:FC<SidebarProps> = (props) =>{
-  const [tempProds, setTempProds] = useState<productObj[]>([]);
-  console.log(tempProds);
+
+  
 
   function handleIkea(){
-    // props.setProducts(tempProds);
     const check1 = document.getElementById("brand1") as HTMLInputElement | null;
     if(check1!.checked == true){
         const newArray = props.products.filter((product)=>{
           return product.company.includes("Ikea");
         });
         props.setProducts([...newArray]);
-    }
-    else {
-      props.setProducts([...tempProds]);
     }
     
   }
@@ -49,13 +45,28 @@ const Sidebar:FC<SidebarProps> = (props) =>{
       });
       props.setProducts([...newArray]);
   }
-  else {
-    props.setProducts([...tempProds]);
+  }
+
+
+
+  function handle1000(){
+    const price1 = document.getElementById("price1") as HTMLInputElement | null;
+    if(price1!.checked == true){
+      const newArray = props.products.filter((product)=>{
+        return product.price < 1000;
+      });
+      props.setProducts([...newArray]);
   }
   }
-  useEffect(() => {
-    setTempProds(props.products);
-  }, [])
+  function handle3099(){
+    const price2 = document.getElementById("price2") as HTMLInputElement | null;
+    if(price2!.checked == true){
+      const newArray = props.products.filter((product)=>{
+        return product.price >= 1000;
+      });
+      props.setProducts([...newArray]);
+  }
+}
   return (
     <div className={styles.container}>
       <h1>Search Results</h1>
@@ -81,11 +92,11 @@ const Sidebar:FC<SidebarProps> = (props) =>{
         </div>
         <div className={styles.priceList}>
           <div className={styles.price1}>
-            <input type="checkbox" />
+            <input type="checkbox" id="price1" onChange={handle1000}/>
             <h4>Under 1000</h4>
           </div>
           <div className={styles.price2}>
-            <input type="checkbox" />
+            <input type="checkbox" id="price2" onChange={handle3099}/>
             <h4>1000 to 3099</h4>
           </div>
         </div>
