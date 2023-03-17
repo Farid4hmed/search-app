@@ -3,9 +3,31 @@ import ProductsGrid from '../../components/ProductsGrid/ProductsGrid';
 import  Sidebar from "../../components/Sidebar/Sidebar";
 import styles from "./Result.module.css";
 export interface IAppProps {
+  search: string,
+  setSearch: (product: string)=>void,
+  products: productObj[],
+  setProducts: (product: productObj[])=>void,
 }
 
-const Result:FC = (props: IAppProps) => {
+export interface productObj {
+  available: string,
+  category: string,
+  colors: Array<string>,
+  company: string,
+  customerRevs: number,
+  desc: string,
+  freeShipping: number,
+  imgUrls: Array<string>,
+  name: string,
+  price: number,
+  sku: string,
+  stars: number,
+  __v: number,
+  _id: string
+}
+
+const Result:FC<IAppProps> = (props) => {
+  console.log(props.search);
   return (
     <div className={styles.container}>
         <div className={styles.navbar}>
@@ -16,8 +38,8 @@ const Result:FC = (props: IAppProps) => {
         </div>
 
         <div className={styles.results}>
-        <Sidebar />
-        <ProductsGrid />
+        <Sidebar products={props.products} setProducts={props.setProducts}/>
+        <ProductsGrid products={props.products} setProducts={props.setProducts}/>
         </div>
     </div>
   );

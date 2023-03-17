@@ -1,9 +1,29 @@
 import { FC } from 'react';
 import styles from "./Sidebar.module.css";
-export interface IAppProps {
+
+export interface SidebarProps {
+  products: productObj[],
+  setProducts: (product: productObj[])=>void, 
 }
 
-const Sidebar:FC = (props: IAppProps) =>{
+export interface productObj {
+  available: string,
+  category: string,
+  colors: Array<string>,
+  company: string,
+  customerRevs: number,
+  desc: string,
+  freeShipping: number,
+  imgUrls: Array<string>,
+  name: string,
+  price: number,
+  sku: string,
+  stars: number,
+  __v: number,
+  _id: string
+}
+
+const Sidebar:FC<SidebarProps> = (props) =>{
   return (
     <div className={styles.container}>
       <h1>Search Results</h1>
