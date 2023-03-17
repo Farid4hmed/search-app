@@ -32,13 +32,13 @@ const Result:FC<IAppProps> = (props) => {
     <div className={styles.container}>
         <div className={styles.navbar}>
         <div className={styles.searchBox}>
-        <input className={styles.search} placeholder="Search" />
+        <input className={styles.search} placeholder="Search" onChange={(e)=>props.setSearch(e.target.value)}/>
         <img className={styles.searchLogo} src={require("../../components/SearchBar/search.png")} alt="searchBar" />
       </div>
         </div>
 
         <div className={styles.results}>
-        <Sidebar products={props.products} setProducts={props.setProducts}/>
+        <Sidebar search={props.search} setSearch={props.setSearch} products={props.products} setProducts={props.setProducts}/>
         <ProductsGrid products={props.products} setProducts={props.setProducts}/>
         </div>
     </div>

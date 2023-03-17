@@ -3,7 +3,9 @@ import styles from "./Sidebar.module.css";
 
 export interface SidebarProps {
   products: productObj[],
-  setProducts: (product: productObj[])=>void, 
+  setProducts: (product: productObj[])=>void,
+  search: string,
+  setSearch: (search: string)=>void,
 }
 
 export interface productObj {
@@ -25,7 +27,16 @@ export interface productObj {
 
 const Sidebar:FC<SidebarProps> = (props) =>{
 
-  
+  function handleSearch(){
+    const newArray = props.products.filter((product) => {
+      return product.name.includes(props.search);
+    })
+    props.setProducts([...newArray]);
+  }
+
+  useEffect(() => {
+      handleSearch();
+  }, [props.search])
 
   function handleIkea(){
     const check1 = document.getElementById("brand1") as HTMLInputElement | null;
